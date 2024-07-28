@@ -10,13 +10,13 @@
     "strapi": "strapi",
     "deploy": "strapi deploy"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-cloud": "4.25.5",
     "@strapi/plugin-i18n": "4.25.5",
     "@strapi/plugin-users-permissions": "4.25.5",
     "@strapi/strapi": "4.25.5",
     "pg": "8.8.0",
+    "pg-connection-string": "^2.6.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
@@ -33,6 +33,5 @@
     "node": "^20.x.x",
     "npm": ">=10.0.0"
   },
-  "license": "MIT",
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  "license": "MIT"
 }
