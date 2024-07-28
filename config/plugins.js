@@ -1,4 +1,8 @@
-const firebaseKey = ({ env }) => ({
+const env = (key) => {
+  return process.env[key]
+}
+
+const firebaseKey = {
   type: "service_account",
   project_id: "konkamon-nuxt-vue",
   private_key_id: env("FIREBASE_PRIVATE_KEY_ID"),
@@ -10,7 +14,7 @@ const firebaseKey = ({ env }) => ({
   auth_provider_x509_cert_url: env("FIREBASE_AUTH_PROVIDER_X509_CERT_URL"),
   client_x509_cert_url: env("FIREBASE_CLIENT_X509_CERT_URL"),
   universe_domain: env("FIREBASE_UNIVERSE_DOMAIN"),
-});
+};
 
 module.exports = ({ env }) => ({
   upload: {
