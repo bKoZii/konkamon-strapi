@@ -377,7 +377,6 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     title: Attribute.String & Attribute.Required;
     subtitle: Attribute.Text & Attribute.Required;
     slug: Attribute.UID<'api::blog.blog', 'title'> & Attribute.Required;
-    content: Attribute.RichText & Attribute.Required;
     mainImage: Attribute.Media<'images'> & Attribute.Required;
     categories: Attribute.Relation<
       'api::blog.blog',
@@ -385,6 +384,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
       'api::category.category'
     >;
     blogIcon: Attribute.Media<'images'> & Attribute.Required;
+    content: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
