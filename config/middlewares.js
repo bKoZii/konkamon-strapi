@@ -14,6 +14,7 @@ module.exports = [
             "blob:",
             "storage.googleapis.com",
             "dl.airtable.com",
+            "market-assets.strapi.io",
           ],
           "media-src": [
             "'self'",
@@ -21,6 +22,7 @@ module.exports = [
             "blob:",
             "storage.googleapis.com",
             "dl.airtable.com",
+            "market-assets.strapi.io",
           ],
           upgradeInsecureRequests: null,
         },
