@@ -21,6 +21,9 @@ module.exports = ({ env }) => ({
     config: {
       provider: "strapi-provider-firebase-storage",
       providerOptions: {
+        metadata: {
+          cacheControl: "public, max-age=31536000",
+        },
         serviceAccount: firebaseKey,
         bucket: env("STORAGE_BUCKET_URL", "gs://konkamon-nuxt-vue.appspot.com"),
         sortInStorage: true,
