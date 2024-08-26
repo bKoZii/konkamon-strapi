@@ -33,6 +33,7 @@ module.exports = ({ env }) => {
           },
         },
         strategy: {
+          maxAge: 604800,
           contentTypes: ["api::blog.blog", "api::category.category"],
         },
       },
