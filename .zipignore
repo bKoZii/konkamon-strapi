@@ -1,0 +1,13 @@
+.editorconfig
+.env*
+.eslint*
+.git/*
+.github/*
+.gitignore
+.strapi-updater.json
+.tmp/*
+.vscode/*
+.zipignore
+README.md
+tools/*
+zip/*
