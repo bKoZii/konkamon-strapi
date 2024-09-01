@@ -16,18 +16,11 @@ module.exports = createCoreController("api::blog.blog", ({ strapi }) => ({
 
     await Promise.all(
       data.map(async (item, index) => {
-        const article = await query.findOne({
+        await query.findOne({
           where: {
             id: item.id,
           },
-          populate: ["createdBy"],
         });
-
-        data[index].attributes.createdBy = {
-          id: article.createdBy.id,
-          firstname: article.createdBy.firstname,
-          lastname: article.createdBy.lastname,
-        };
       })
     );
 
